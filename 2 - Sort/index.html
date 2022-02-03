@@ -2,12 +2,26 @@
 <html>
 	<head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/index.css">
 		<title>Sort</title>
 	</head>
 	<body>
-        <h1>Ejercicios de Sort</h1>
-        <h3>(en la consola)</h3>
-        <!--Change the number in ejercicio-n.js to use different files-->
-        <script src="./ejercicios/ejercicio-2.js"></script>
+        <h1 class="title-margin">Ejercicios de Sort</h1>
+        <h3 class="title-margin">(1 y 2 en la consola)</h3>
+
+        <!--Here goes ejercicio 3 through DOM-->
+        <div class="margin-top">
+            <h3 class="title-margin">Ejercicio 3:</h3>
+            <section id="ejercicio-3" class="margin-left"></section>
+            <button class="button l-30" onclick="showRandomCard()">Add card</button>
+            <button class="button" id="waiting" onclick="showRandomCardWaiting()">Add card in 10 seconds</button>
+            <!--I didn't make a button that changes the size of the card because the card is not responsive-->
+        </div>   
+
+        <!--<script src="./ejercicios/ejercicio-1.js"></script>-->
+        <!--<script src="./ejercicios/ejercicio-2.js"></script>-->
+        <script src="./ejercicios/ejercicio-3.js"></script>
+        <script src="./ejercicios/ejercicio-4.js"></script>
 	</body>
 </html>
