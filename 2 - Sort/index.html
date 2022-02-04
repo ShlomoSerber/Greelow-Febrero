@@ -14,11 +14,22 @@
         <div class="margin-top">
             <h3 class="title-margin">Ejercicio 3:</h3>
             <section id="ejercicio-3" class="margin-left"></section>
-            <button class="button l-30" onclick="showRandomCard()">Add card</button>
-            <button class="button" id="waiting" onclick="showRandomCardWaiting()">Add card in 10 seconds</button>
+            <button class="button l-30" onclick="showRandomCard('ejercicio-3')">Add card</button>
+            <button class="button" id="waiting" onclick="showRandomCardWaiting('ejercicio-3')">Add card in 10 seconds</button>
             <!--I didn't make a button that changes the size of the card because the card is not responsive-->
         </div>   
 
+        <!--Here goes ejercicio 4 through DOM-->
+        <div class="margin-top">
+            <h3 class="title-margin">Ejercicio 4:</h3>
+            <section id="ejercicio-4" class="margin-left"></section>
+            <input class="input l-30" type="number" id="number" placeholder="Amount">
+            <button class="button" onclick="showCards('number', 'ejercicio-4', 'ejercicio-3-sort-log', false)">Add cards</button>
+            <button class="button" onclick="showCards('number', 'ejercicio-4', 'ejercicio-3-sort-log', true)">Sort cards (2-10, A, J, K, Q)</button>
+            <section id="ejercicio-3-sort-log"></section>
+        </div>
+
+        <!--Because of the CORS permision error i had to declare the same functions twice in ejercicio-3.js and ejercicio-4.js, so i changed the name in ejercicio-4.js so it doesn't give me a "it's already declared" error-->
         <!--<script src="./ejercicios/ejercicio-1.js"></script>-->
         <!--<script src="./ejercicios/ejercicio-2.js"></script>-->
         <script src="./ejercicios/ejercicio-3.js"></script>

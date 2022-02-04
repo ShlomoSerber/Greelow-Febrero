@@ -1,10 +1,9 @@
-const suits = [1, 2, 3, 4];
-const ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "A", "J", "K", "Q"]
-
+// Function to get a random number from 0 to inclusiveMax:
 const getRandom = inclusiveMax => {
     return Math.ceil((Math.random() * inclusiveMax));
 }
 
+// Function to draw a card inside the element with the id domId with the given suit and rank:
 const showCard = (suit, rank, domId) => {
 
     // Instructions:
@@ -55,11 +54,11 @@ const showCard = (suit, rank, domId) => {
     const red = "red-corner-text";
 
     let cardContainer = document.querySelector(`#${domId}`);  
-    cardContainer.innerHTML += `<section id="ejercicio-3" class="margin-left"><article class="card"><div class="corner"><i class="${suit === 1 ? club : suit === 2 ? diamond : suit === 3 ? heart : suit === 4 ? spade : null} ${suit == 2 || suit == 3 ? red : black}"></i><p class="${suit == 2 || suit == 3 ? red : black}">${rank}</p></div><h2 class="${suit == 2 || suit == 3 ? "red-center-text" : "center-text"}">${rank == "A" ? `<i class="${suit === 1 ? club : suit === 2 ? diamond : suit === 3 ? heart : suit === 4 ? spade : null} ${suit == 2 || suit == 3 ? "red-center-text" : "center-text"}"></i>` : rank}</h2><div class="bottom-right"><div class="corner"><i class="${suit === 1 ? club : suit === 2 ? diamond : suit === 3 ? heart : suit === 4 ? spade : null} ${suit == 2 || suit == 3 ? red : black}"></i><p class="${suit == 2 || suit == 3 ? red : black}">${rank}</p></div></div></article></section>`; 
-
+    cardContainer.innerHTML += `<article class="card"><div class="corner"><i class="${suit === 1 ? club : suit === 2 ? diamond : suit === 3 ? heart : suit === 4 ? spade : null} ${suit == 2 || suit == 3 ? red : black}"></i><p class="${suit == 2 || suit == 3 ? red : black}">${rank}</p></div><h2 class="${suit == 2 || suit == 3 ? "red-center-text" : "center-text"}">${rank == "A" ? `<i class="${suit === 1 ? club : suit === 2 ? diamond : suit === 3 ? heart : suit === 4 ? spade : null} ${suit == 2 || suit == 3 ? "red-center-text" : "center-text"}"></i>` : rank}</h2><div class="bottom-right"><div class="corner"><i class="${suit === 1 ? club : suit === 2 ? diamond : suit === 3 ? heart : suit === 4 ? spade : null} ${suit == 2 || suit == 3 ? red : black}"></i><p class="${suit == 2 || suit == 3 ? red : black}">${rank}</p></div></div></article>`; 
 }
 
-const showRandomCard = () => {
+// Function to show a random poker card inside the element with the id domId
+const showRandomCard = domId => {
     let suit = getRandom(4);
     let rank = getRandom(13) + 1;
     rank == 11 ?
@@ -72,11 +71,10 @@ const showRandomCard = () => {
     rank = "Q"
     : null;
 
-    showCard(suit, rank, "ejercicio-3")
-
+    showCard(suit, rank, domId)
 }
 
-const showRandomCardWaiting = () => {
+const showRandomCardWaiting = domId => {
     let waiting = document.querySelector("#waiting");
 
     const setAdd = () => {
@@ -84,8 +82,8 @@ const showRandomCardWaiting = () => {
     }
 
     waiting.innerHTML = "Adding ...";
-    setTimeout(showRandomCard, 10000);
+    setTimeout(showRandomCard, 10000, domId);
     setTimeout(setAdd, 10001);
 }
 
-showRandomCard();
+showRandomCard("ejercicio-3");
