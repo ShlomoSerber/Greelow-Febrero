@@ -1,0 +1,93 @@
+.ejercicio-title {
+    margin-top: 60px;
+}
+.calculator-container {
+    margin-top: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px;
+    height: 400px;
+    width: 370px;
+}
+.calculator-title {
+    text-align: center;
+    color: white;
+    padding: 17px;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 23px;
+    font-weight: 400;
+}
+.calculator-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: black;
+    border-width: 1px;
+    width: 347px;
+}
+.calculator-total-container {
+    margin: 5px;
+    width: 335px;
+}
+.calculator-total {
+    text-align: start;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 300;
+}
+.calculator-input {
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+}
+.memory-row {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    padding: 5px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: black;
+}
+.button:hover {
+    background-color: black;
+    color: white;
+}
+.memory-display {
+    font-size: 15px;
+    max-width: 150px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.numbers-operators {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.numbers, .operators {
+    margin: 10px;
+    width: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.operator {
+    margin: 5px;
+    font-size: 20px;
+}
+.calculate {
+    width: 57px;
+}

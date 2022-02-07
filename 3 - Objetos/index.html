@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
         <meta charset="utf-8">
-		<title>Objetos</title>
-	</head>
-	<body>
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Objetos</title>
+    </head>
+    <body>
         <h1>Ejercicios de Objetos</h1>
         <h3>(en la consola)</h3>
+
+        <div id="ejercicio-9"></div>
+        <h3 class="ejercicio-title">Ejercicio 9:</h3>
+        <div class="calculator-container">
+            <div class="calculator-title">Calculator</div>
+            <div class="calculator-display">
+                <div class="calculator-total-container">
+                    <h3 class="calculator-total" id="display">0</h3>
+                </div>
+                <input class="calculator-input" id="input">
+            </div>
+            <div class="memory-row">
+                <button class="button" onclick='calculator.memoryStore("memory", "input")'>MS</button>
+                <button class="button" onclick='calculator.memoryRecall("memory", "input")'>MR</button>
+                <button class="button" onclick='calculator.memoryClear("memory")'>MC</button>
+                <button class="button" onclick='calculator.memoryAdd("memory", "input")'>M+</button>
+                <button class="button" onclick='calculator.memorySubtract("memory", "input")'>M-</button>
+                <div class="memory-display" id="memory">Memory: 0</div>
+            </div>
+            <div class="numbers-operators">
+                <div class="numbers">
+                    <button class="button operator" onclick="calculator.writeToInput('input', '0')">0</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '1')">1</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '2')">2</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '3')">3</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '4')">4</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '5')">5</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '6')">6</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '7')">7</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '8')">8</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '9')">9</button>
+                    <button class="button operator calculate" onclick='calculator.calculate("input", "display")'>=</button>
+                </div>
+                <div class="operators">
+                    <button class="button operator" onclick="calculator.clear('input', 'display')">Clear</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '+')">+</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '-')">-</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '*')">*</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '/')">/</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '(')">(</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', ')')">)</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '**')">^</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '.')">.</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', ',')">,</button>
+                    <button class="button operator" onclick="calculator.writeToInput('input', '%')">r</button>
+                </div>
+            </div>
+        </div>
+
         <!--Change the number in ejercicio-n.js to use different files-->
-        <script src="./ejercicios/ejercicio-2-4,8.js"></script>
-	</body>
+        <!--Calculator will not work if ejercicio-9 is not called-->
+        <script src="./ejercicios/ejercicio-9.js"></script>
+    </body>
 </html>
