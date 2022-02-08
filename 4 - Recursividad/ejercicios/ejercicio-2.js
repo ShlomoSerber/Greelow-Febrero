@@ -1,21 +1,32 @@
-let newString = ""
-
-const palindromeRecursion = string => {
-    newString += string[string.length - 1];
+const palindromeRecursion = (string = "") => {
     
     if (string.length <= 1) {
-        if (newString == string) {
-            return true
-        } else {
-            return false
-        }
+        return string[string.length - 1];
     } else {
-        return palindromeRecursion(string.substring(0, string.length - 1));
+        let newString = string[string.length - 1] + palindromeRecursion(string.substring(0, string.length - 1));
+
+        if (string == newString) {
+            return `${string} is a palindrome`;
+        } else {
+            return newString;
+        }  
     }
 }
 
-console.log(palindromeRecursion("ABVGTTGVBA"));
+const palindromeLoop = (string = "") => {
+    let newString = "";
 
-const palindromeLoop = string => {
+    for (i = string.length - 1; i >= 0; i--) {
+        newString += string[i];
+    }
+    
+    if (string == newString) {
+        return `${string} is a palindrome`;
+    } else {
+        return `${string} is not a palindrome`;
+    }
     
 }
+
+console.log(palindromeRecursion("DABALEARROZALAZORRAELABAD"));
+console.log(palindromeLoop("DABALEARROZALAZORRAELABAD"));
