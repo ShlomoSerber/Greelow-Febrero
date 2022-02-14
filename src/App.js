@@ -1,10 +1,13 @@
 import './App.css';
+import SetPlayers from "./components/SetPlayers"
+import Game from "./components/Game"
 
 function App() {
   return (
-    <div>
-        Hola
-    </div>
+    <>
+        <SetPlayers />
+        {/*<Game />*/}
+    </>
   );
 }
 
