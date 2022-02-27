@@ -9,6 +9,8 @@
 .players {
     display: flex;
     align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .player {
     margin: 10px;
