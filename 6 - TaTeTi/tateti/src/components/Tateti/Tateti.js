@@ -12,7 +12,7 @@ const Tateti = () => {
     }, [values])
 
     const squareClick = (event, squareNumber) => {
-        event.target.value = player;
+        event.target.textContent = player;
 
         setValues([{
             number: squareNumber,
@@ -37,7 +37,7 @@ const Tateti = () => {
             <div className="game-squares">
                 {
                 squares.map(square => 
-                    <div className="game-square" key={square} onClick={() => squareClick(event, square)}></div>
+                    <div className="game-square" key={square} onClick={(event) => squareClick(event, square)}></div>
                 )
                 }
             </div>
