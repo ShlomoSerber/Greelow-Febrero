@@ -13,27 +13,27 @@ const Tateti = () => {
 
     // Winning conditions (separate but equal for x and o) inside a useEffect that watches x and o:
     useEffect(() => {
-        if (x.some(n => n == 1) && x.some(n => n == 2) && x.some(n => n == 3) 
-        || x.some(n => n == 4) && x.some(n => n == 5) && x.some(n => n == 6)
-        || x.some(n => n == 7) && x.some(n => n == 8) && x.some(n => n == 9)
-        || x.some(n => n == 1) && x.some(n => n == 4) && x.some(n => n == 7)
-        || x.some(n => n == 2) && x.some(n => n == 5) && x.some(n => n == 8)
-        || x.some(n => n == 3) && x.some(n => n == 6) && x.some(n => n == 9)
-        || x.some(n => n == 1) && x.some(n => n == 5) && x.some(n => n == 9)
-        || x.some(n => n == 3) && x.some(n => n == 5) && x.some(n => n == 7)
+        if ((x.some(n => n == 1) && x.some(n => n == 2) && x.some(n => n == 3)) 
+        || (x.some(n => n == 4) && x.some(n => n == 5) && x.some(n => n == 6))
+        || (x.some(n => n == 7) && x.some(n => n == 8) && x.some(n => n == 9))
+        || (x.some(n => n == 1) && x.some(n => n == 4) && x.some(n => n == 7))
+        || (x.some(n => n == 2) && x.some(n => n == 5) && x.some(n => n == 8))
+        || (x.some(n => n == 3) && x.some(n => n == 6) && x.some(n => n == 9))
+        || (x.some(n => n == 1) && x.some(n => n == 5) && x.some(n => n == 9))
+        || (x.some(n => n == 3) && x.some(n => n == 5) && x.some(n => n == 7))
         ) {
             setPlaying(false);
             setPlayer("X");
         }
 
-        if (o.some(n => n == 1) && o.some(n => n == 2) && o.some(n => n == 3) 
-        || o.some(n => n == 4) && o.some(n => n == 5) && o.some(n => n == 6)
-        || o.some(n => n == 7) && o.some(n => n == 8) && o.some(n => n == 9)
-        || o.some(n => n == 1) && o.some(n => n == 4) && o.some(n => n == 7)
-        || o.some(n => n == 2) && o.some(n => n == 5) && o.some(n => n == 8)
-        || o.some(n => n == 3) && o.some(n => n == 6) && o.some(n => n == 9)
-        || o.some(n => n == 1) && o.some(n => n == 5) && o.some(n => n == 9)
-        || o.some(n => n == 3) && o.some(n => n == 5) && o.some(n => n == 7)
+        if ((o.some(n => n == 1) && o.some(n => n == 2) && o.some(n => n == 3)) 
+        || (o.some(n => n == 4) && o.some(n => n == 5) && o.some(n => n == 6))
+        || (o.some(n => n == 7) && o.some(n => n == 8) && o.some(n => n == 9))
+        || (o.some(n => n == 1) && o.some(n => n == 4) && o.some(n => n == 7))
+        || (o.some(n => n == 2) && o.some(n => n == 5) && o.some(n => n == 8))
+        || (o.some(n => n == 3) && o.some(n => n == 6) && o.some(n => n == 9))
+        || (o.some(n => n == 1) && o.some(n => n == 5) && o.some(n => n == 9))
+        || (o.some(n => n == 3) && o.some(n => n == 5) && o.some(n => n == 7))
         ) {
             setPlaying(false);
             setPlayer("O");
