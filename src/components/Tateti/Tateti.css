@@ -40,6 +40,10 @@
     justify-content: center;
     align-items: center;
 }
+.game-squares-won {
+    background-color: #50206c;
+    pointer-events: none;
+}
 .game-square {
     padding: 5px;
     border-style: solid;
@@ -54,5 +58,24 @@
     font-weight: 500;
 }
 .game-square:hover {
-    background-color: rgb(64, 64, 87);
+    background-color: #50206c;
+}
+.game-square-clicked {
+    pointer-events: none;
+}
+.hide {
+    display: none;
+}
+.new-game {
+    margin: 5px;
+    padding: 10px;
+    background-color: #50206c;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.footer {
+    margin: 10px;
+    margin-top: 70px;
+    padding: 10px;
 }
