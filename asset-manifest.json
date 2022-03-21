@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Greelow-Febrero/6%20-%20TaTeTi/tateti/static/css/main.a47164d0.css",
-    "main.js": "/Greelow-Febrero/6%20-%20TaTeTi/tateti/static/js/main.a170e8ee.js",
-    "static/media/tateti.jpg": "/Greelow-Febrero/6%20-%20TaTeTi/tateti/static/media/tateti.966b8ad4ea0da15e96c1.jpg",
-    "index.html": "/Greelow-Febrero/6%20-%20TaTeTi/tateti/index.html",
-    "main.a47164d0.css.map": "/Greelow-Febrero/6%20-%20TaTeTi/tateti/static/css/main.a47164d0.css.map",
-    "main.a170e8ee.js.map": "/Greelow-Febrero/6%20-%20TaTeTi/tateti/static/js/main.a170e8ee.js.map"
+    "main.css": "/Greelow-Febrero/tree/main/6%20-%20TaTeTi/tateti/static/css/main.a47164d0.css",
+    "main.js": "/Greelow-Febrero/tree/main/6%20-%20TaTeTi/tateti/static/js/main.58899553.js",
+    "static/media/tateti.jpg": "/Greelow-Febrero/tree/main/6%20-%20TaTeTi/tateti/static/media/tateti.966b8ad4ea0da15e96c1.jpg",
+    "index.html": "/Greelow-Febrero/tree/main/6%20-%20TaTeTi/tateti/index.html",
+    "main.a47164d0.css.map": "/Greelow-Febrero/tree/main/6%20-%20TaTeTi/tateti/static/css/main.a47164d0.css.map",
+    "main.58899553.js.map": "/Greelow-Febrero/tree/main/6%20-%20TaTeTi/tateti/static/js/main.58899553.js.map"
   },
   "entrypoints": [
     "static/css/main.a47164d0.css",
-    "static/js/main.a170e8ee.js"
+    "static/js/main.58899553.js"
   ]
 }
